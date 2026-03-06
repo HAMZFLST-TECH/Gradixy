@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradixy | Gradient Generator for Linear, Radial & Conic Backgrounds</title>
+
+    <meta name="description"
+        content="Gradixy is a high-performance CSS gradient generator for creating linear, radial, and conic gradients. Instantly preview and copy clean CSS and Tailwind gradient code for modern UI and web design.">
+
+    <meta name="keywords"
+        content="css gradient generator, gradixy gradient generator, linear gradient css, radial gradient css, conic gradient css, tailwind gradient generator, background gradient tool, ui gradients, Gradixy">
+
+    <meta name="author" content="HAMZFLST.TECH">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://gradixy.netlify.app/">
+
+    <meta property="og:title" content="Gradixy | Professional CSS Gradient Generator">
+    <meta property="og:description"
+        content="Create professional CSS gradients instantly with Gradixy. Generate linear, radial, and conic gradients with production-ready code.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gradixy.netlify.app/">
+    <meta property="og:image" content="https://gradixy.netlify.app/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gradixy | CSS Gradient Generator">
+    <meta name="twitter:description"
+        content="Generate modern CSS gradients instantly. Copy clean CSS and Tailwind classes for UI and web projects.">
+    <meta name="twitter:image" content="https://gradixy.netlify.app/preview.png">
+
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/web-app-manifest-512x512.png">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gradixy",
+      "url": "https://gradixy.netlify.app/",
+      "description": "Gradixy is a professional CSS gradient generator for creating linear, radial, and conic gradients for modern UI and web design.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "All",
+      "creator": {
+        "@type": "Organization",
+        "name": "HAMZFLST.TECH"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="hero">
+        <img src="assets/Gradixy.png" alt="Gradixy">
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Gradixy Gradient Generator</h1>
+            <p>Generate precise linear, radial, and conic gradients for modern UI and web applications</p>
+        </div>
+
+        <div class="main-content">
+            <div class="panel">
+                <h2>Gradient Preview and Code Output</h2>
+
+                <div id="gradientPreview" class="preview-area"></div>
+
+                <h3 style="margin-bottom: 10px; color: #ffffff;">CSS Gradient Code</h3>
+                <div id="cssCode" class="code-output"></div>
+                <button id="copyCssBtn" class="copy-btn">Copy CSS</button>
+
+                <h3 style="margin-bottom: 10px; margin-top: 20px; color: #ffffff;">Tailwind Gradient Class</h3>
+                <div id="tailwindCode" class="code-output"></div>
+                <button id="copyTailwindBtn" class="copy-btn">Copy Tailwind</button>
+            </div>
+
+            <div class="panel">
+                <h2>Customize Gradient</h2>
+
+                <button id="randomBtn" class="random-btn">Generate Random Gradient</button>
+
+                <div class="controls-section">
+                    <label>Gradient Type:</label>
+                    <div class="type-selector">
+                        <button class="type-btn active" data-type="linear">Linear</button>
+                        <button class="type-btn" data-type="radial">Radial</button>
+                        <button class="type-btn" data-type="conic">Conic</button>
+                    </div>
+                </div>
+
+                <div class="controls-section">
+                    <label>Angle: <span id="angleDisplay">90</span>°</label>
+                    <input type="range" id="angleSlider" class="slider" min="0" max="360" value="90">
+                </div>
+
+                <div class="controls-section">
+                    <label>Color Stops:</label>
+                    <div id="colorStopsContainer"></div>
+                    <button id="addColorBtn" class="add-color-btn">Add Color + </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Gradixy. A professional tool by HAMZFLST.TECH.</p>
+           <!-- Social Links -->
+    <div class="footer-social">
+        <a href="https://www.tiktok.com/@hamzflst.tech" target="_blank" aria-label="Twitter">
+            <img src="assets/icons/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.linkedin.com/in/hamzflst" target="_blank" aria-label="LinkedIn">
+            <img src="assets/icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/HAMZFLST-TECH" target="_blank" aria-label="GitHub">
+            <img src="assets/icons/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/hamzflst.tech" target="_blank" aria-label="Instagram">
+            <img src="assets/icons/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
