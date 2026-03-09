@@ -1,3 +1,11 @@
+// /* * GRADIXY - Professional Gradient Generator
+//  * Built by: HAMZATAYYAB AKA HAMZFLST-TECH
+//  * Project URL: https://gradixy.netlify.app
+//  * GitHub: https://github.com/HAMZFLST-TECH/Gradixy
+//  * * This code is part of my professional portfolio. 
+//  * Please provide attribution if used for educational purposes.
+//  */
+
 var app = {
   gradientType: "linear",
   angle: 90,
@@ -313,3 +321,4 @@ function copyToClipboard(text, btn) {
 }
 
 init();
+
