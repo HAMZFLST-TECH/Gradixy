@@ -80,8 +80,23 @@ Tailwind CSS
 ## 👤 Author
 HAMZFLST.TECH Building tools to make the web more beautiful.
 
-## 📄 License
-This project is licensed under the MIT License.
+## 📄 License & Trademark
+
+### Software License
+This project's underlying source code is licensed under the **MIT License**. 
+Copyright (c) 2026 **HAMZFLST-TECH (Gradixy)**.
+
+### Trademark & Brand Guidelines
+
+The names **"Gradixy"**, **"HAMZFLST-TECH"**, and all associated logos, brand assets, and unique UI/UX design tokens are proprietary trademarks.
+While the code is MIT licensed, you must remove all Gradixy branding, assets and rename the project if you use it in a public portfolio or commercial service.
+
+
+**If you use this code for a public portfolio, commercial service, or redistribution:**
+* ❌ **You may NOT** use the Gradixy name, logo, or official branding.
+* ❌ **You may NOT** claim the original design or architecture as your own work.
+* ✅ **You MUST** rename the project and provide a clear attribution link back to this original repository.
+* ✅ **You MUST** keep the original MIT License file and copyright headers intact within the source code.
 
 ## USAGE
 You are free to use this code under the MIT license. However, re-uploading this project to your own portfolio and claiming original authorship is strictly prohibited and considered plagiarism
