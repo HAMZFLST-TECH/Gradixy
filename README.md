@@ -83,6 +83,9 @@ HAMZFLST.TECH Building tools to make the web more beautiful.
 ## 📄 License
 This project is licensed under the MIT License.
 
+## USAGE
+You are free to use this code under the MIT license. However, re-uploading this project to your own portfolio and claiming original authorship is strictly prohibited and considered plagiarism
+
 ## Support
 
 If you find Gradixy useful, consider giving this repository a ⭐ on GitHub.
